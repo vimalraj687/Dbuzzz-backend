@@ -17,7 +17,7 @@ const app = express();
 // DB
 connectDB();
 app.use(cors({
-  origin: "https://dbuzzz-frontend-rnta.vercel.app/",  
+  origin: "https://dbuzzz-frontend-5ymj.vercel.app/",  
   methods: "GET,POST,PUT,DELETE",
   credentials: true, // Allow cookies if needed
 }));
