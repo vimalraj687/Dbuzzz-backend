@@ -16,7 +16,11 @@ const app = express();
 
 // DB
 connectDB();
-
+app.use(cors({
+  origin: "https://dbuzzz-frontend-eight.vercel.app/", // Remove trailing slash
+  methods: "GET,POST,PUT,DELETE",
+  credentials: true, // Allow cookies if needed
+}));
 
 // Middlewares
 app.use(helmet());
