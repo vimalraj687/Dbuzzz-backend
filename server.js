@@ -21,6 +21,10 @@ app.use(cors({
   methods: "GET,POST,PUT,DELETE",
   credentials: true, // Allow cookies if needed
 }));
+const api = axios.create({
+  baseURL: process.env.REACT_APP_API_URL,
+});
+export default api;
 
 // Middlewares
 app.use(helmet());
